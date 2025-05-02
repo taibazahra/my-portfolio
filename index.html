@@ -24,25 +24,48 @@
 <body>
   <!-- Navigation -->
   <nav data-aos="fade-down">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">TZ</span>
+        <span class="ai-pulse"></span>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- Header Section with AI Particles -->
   <header>
     <div class="particles" id="particles-js"></div>
     <div class="header-container">
-      <img src="images/my-profile.jpg" alt="Taiba Zahra" class="profile-img animate__animated animate__fadeIn">
+      <div class="profile-container animate__animated animate__fadeIn">
+        <img src="images/my-profile.jpg" alt="Taiba Zahra" class="profile-img">
+        <div class="profile-tech-icons">
+          <i class="fab fa-python" style="--i:1"></i>
+          <i class="fas fa-robot" style="--i:2"></i>
+          <i class="fas fa-brain" style="--i:3"></i>
+          <i class="fab fa-js" style="--i:4"></i>
+          <i class="fas fa-code" style="--i:5"></i>
+        </div>
+      </div>
       <div class="header-text">
         <h1 class="animate__animated animate__fadeInDown">Taiba Zahra</h1>
-        <h2 class="animate__animated animate__fadeInDown animate__delay-1s">AI Integration Specialist</h2>
+        <h2 class="animate__animated animate__fadeInDown animate__delay-1s typing-title"></h2>
         <p class="animate__animated animate__fadeInUp animate__delay-2s">Bridging artificial intelligence with innovative digital solutions</p>
+        <div class="header-buttons animate__animated animate__fadeInUp animate__delay-3s">
+          <a href="files/Taiba_Zahra_Resume.pdf" download class="download-btn pulse-on-hover">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#projects" class="view-work-btn">
+            <i class="fas fa-laptop-code"></i> View My Work
+          </a>
+        </div>
       </div>
       <div class="scroll-indicator animate__animated animate__fadeIn animate__delay-3s">
         <i class="fas fa-chevron-down"></i>
@@ -58,27 +81,44 @@
         <img src="images/my-robo.gif" alt="AI Robot" class="robo-icon">
       </h2>
     </div>
-    <p>
-      I'm an AI enthusiast with a passion for integrating cutting-edge artificial intelligence technologies into creative digital solutions. 
-      With a strong foundation in computer applications and hands-on experience in AI projects, I thrive on challenging assignments that 
-      blend innovation with state-of-the-art design to deliver engaging, intelligent experiences.
-    </p>
-    
-    <div class="terminal-container" data-aos="zoom-in">
-      <div class="terminal-header">
-        <div class="terminal-button red"></div>
-        <div class="terminal-button yellow"></div>
-        <div class="terminal-button green"></div>
-        <div class="terminal-title">taiba@ai-portfolio:~</div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          I'm an AI enthusiast with a passion for integrating cutting-edge artificial intelligence technologies into creative digital solutions. 
+          With a strong foundation in computer applications and hands-on experience in AI projects, I thrive on challenging assignments that 
+          blend innovation with state-of-the-art design to deliver engaging, intelligent experiences.
+        </p>
+        <div class="personal-traits">
+          <div class="trait" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-lightbulb"></i>
+            <span>Innovative Thinker</span>
+          </div>
+          <div class="trait" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>Problem Solver</span>
+          </div>
+          <div class="trait" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-rocket"></i>
+            <span>Fast Learner</span>
+          </div>
+        </div>
       </div>
-      <div class="terminal-body">
-        <div class="terminal-prompt">$ <span class="terminal-command">whoami</span></div>
-        <div class="terminal-response">taiba_zahra - AI Integration Specialist - Creative Technologist</div>
-        <div class="terminal-prompt">$ <span class="terminal-command">skills --ai</span></div>
-        <div class="terminal-response">Python | Machine Learning | AI Integration | UX Design | Project Management</div>
-        <div class="terminal-prompt">$ <span class="terminal-command">contact --social</span></div>
-        <div class="terminal-response">LinkedIn: taiba-zahra | GitHub: taibazahra | Email: taibazahra6@gmail.com</div>
-        <div class="terminal-prompt">$ <span class="terminal-command typing-effect">find_job --ai_field --remote</span></div>
+      <div class="terminal-container" data-aos="zoom-in">
+        <div class="terminal-header">
+          <div class="terminal-button red"></div>
+          <div class="terminal-button yellow"></div>
+          <div class="terminal-button green"></div>
+          <div class="terminal-title">taiba@ai-portfolio:~</div>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-prompt">$ <span class="terminal-command">whoami</span></div>
+          <div class="terminal-response">taiba_zahra - AI Integration Specialist - Creative Technologist</div>
+          <div class="terminal-prompt">$ <span class="terminal-command">skills --ai</span></div>
+          <div class="terminal-response">Python | Machine Learning | AI Integration | UX Design | Project Management</div>
+          <div class="terminal-prompt">$ <span class="terminal-command">contact --social</span></div>
+          <div class="terminal-response">LinkedIn: taiba-zahra | GitHub: taibazahra | Email: taibazahra6@gmail.com</div>
+          <div class="terminal-prompt">$ <span class="terminal-command typing-effect">find_job --ai_field --remote</span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -92,22 +132,36 @@
       </h2>
     </div>
     
-    <div class="education-item" data-aos="fade-right">
-      <h3>St. Joseph's University, Bengaluru, KA</h3>
-      <p>Bachelor's of Computer Applications (BCA) | August 2022 - July 2025</p>
-      <p>SGPA: 8.28, Percentage: 79.17% (Year 3)</p>
-    </div>
-    
-    <div class="education-item" data-aos="fade-right" data-aos-delay="100">
-      <h3>Sardar Dastur Hormazdiar Junior College, Pune, MH</h3>
-      <p>HSC | May 2020 - April 2022</p>
-      <p>Percentage: 76.50%, Grade: A</p>
-    </div>
-    
-    <div class="education-item" data-aos="fade-right" data-aos-delay="200">
-      <h3>Girls' High School and College, Prayagraj, UP</h3>
-      <p>ICSE | May 2018 - April 2020</p>
-      <p>Percentage: 75%, Grade: A | Gold Medal in Throws (Shot put)</p>
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2022 - 2025</div>
+        <div class="timeline-content">
+          <h3>St. Joseph's University, Bengaluru, KA</h3>
+          <p>Bachelor's of Computer Applications (BCA)</p>
+          <p>SGPA: 8.28, Percentage: 79.17% (Year 3)</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2020 - 2022</div>
+        <div class="timeline-content">
+          <h3>Sardar Dastur Hormazdiar Junior College, Pune, MH</h3>
+          <p>HSC</p>
+          <p>Percentage: 76.50%, Grade: A</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2018 - 2020</div>
+        <div class="timeline-content">
+          <h3>Girls' High School and College, Prayagraj, UP</h3>
+          <p>ICSE</p>
+          <p>Percentage: 75%, Grade: A | Gold Medal in Throws (Shot put)</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -120,34 +174,60 @@
       </h2>
     </div>
     
-    <div class="experience-item" data-aos="zoom-in">
-      <h3>MORPH DIGITAL SOLUTION PRIVATE LIMITED</h3>
-      <p><strong>Role:</strong> Junior Project Manager | Nov 2024 - Jan 2025</p>
-      <ul>
-        <li>Developed 12+ innovative design solutions for various platforms, boosting brand engagement by 40%.</li>
-        <li>Collaborated with Creative Directors to ensure 95% brand guideline compliance.</li>
-        <li>Delivered 20+ projects on time with top creative results.</li>
-      </ul>
-    </div>
-    
-    <div class="experience-item" data-aos="zoom-in" data-aos-delay="100">
-      <h3>TBOT TECHNO SYSTEMS PRIVATE LIMITED</h3>
-      <p><strong>Role:</strong> Marketing Research Intern | Aug 2023 - Oct 2023</p>
-      <ul>
-        <li>Increased engagement by 30% with new social media strategies.</li>
-        <li>Created LinkedIn content that boosted profile engagement by 20%.</li>
-        <li>Performed competitive analysis to support campaign planning.</li>
-      </ul>
-    </div>
-    
-    <div class="experience-item" data-aos="zoom-in" data-aos-delay="200">
-      <h3>WINSPLE</h3>
-      <p><strong>Role:</strong> Graphic Designing Intern | Jan 2023 - May 2023</p>
-      <ul>
-        <li>Designed 50+ thumbnails increasing click-through rates by 15%.</li>
-        <li>Worked closely with sales teams for feedback and design improvement.</li>
-        <li>Monitored trends to improve visuals.</li>
-      </ul>
+    <div class="experience-grid">
+      <div class="experience-item" data-aos="zoom-in">
+        <div class="exp-logo">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        <h3>MORPH DIGITAL SOLUTION PRIVATE LIMITED</h3>
+        <p class="exp-role"><strong>Junior Project Manager</strong> | Nov 2024 - Jan 2025</p>
+        <ul>
+          <li>Developed 12+ innovative design solutions for various platforms, boosting brand engagement by 40%.</li>
+          <li>Collaborated with Creative Directors to ensure 95% brand guideline compliance.</li>
+          <li>Delivered 20+ projects on time with top creative results.</li>
+        </ul>
+        <div class="exp-skills">
+          <span>Project Management</span>
+          <span>Team Leadership</span>
+          <span>Creative Strategy</span>
+        </div>
+      </div>
+      
+      <div class="experience-item" data-aos="zoom-in" data-aos-delay="100">
+        <div class="exp-logo">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>TBOT TECHNO SYSTEMS PRIVATE LIMITED</h3>
+        <p class="exp-role"><strong>Marketing Research Intern</strong> | Aug 2023 - Oct 2023</p>
+        <ul>
+          <li>Increased engagement by 30% with new social media strategies.</li>
+          <li>Created LinkedIn content that boosted profile engagement by 20%.</li>
+          <li>Performed competitive analysis to support campaign planning.</li>
+        </ul>
+        <div class="exp-skills">
+          <span>Market Research</span>
+          <span>Social Media</span>
+          <span>Data Analysis</span>
+        </div>
+      </div>
+      
+      <div class="experience-item" data-aos="zoom-in" data-aos-delay="200">
+        <div class="exp-logo">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <h3>WINSPLE</h3>
+        <p class="exp-role"><strong>Graphic Designing Intern</strong> | Jan 2023 - May 2023</p>
+        <ul>
+          <li>Designed 50+ thumbnails increasing click-through rates by 15%.</li>
+          <li>Worked closely with sales teams for feedback and design improvement.</li>
+          <li>Monitored trends to improve visuals.</li>
+        </ul>
+        <div class="exp-skills">
+          <span>Graphic Design</span>
+          <span>Visual Communication</span>
+          <span>Creativity</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -160,28 +240,63 @@
       </h2>
     </div>
     
-    <div class="project-item" data-aos="flip-left">
-      <h3>Mindful Chatbot</h3>
-      <p>
-        A compassionate, AI-powered assistant for meditation, affirmations, and reflection. Built with natural language processing to provide personalized mental wellness support.
-        <a href="https://github.com/taibazahra/my-mindful-robot" target="_blank" rel="noopener">View Project <i class="fas fa-external-link-alt"></i></a>
-      </p>
-    </div>
-    
-    <div class="project-item" data-aos="flip-left" data-aos-delay="100">
-      <h3>AI Powered Academic Portal</h3>
-      <p>
-        A smart platform generating custom questions, giving feedback, and simplifying grading. Utilizes machine learning to adapt to student learning patterns.
-        <a href="https://github.com/Sunidhi-incline/ai_powered_student_portal/tree/main/backend" target="_blank" rel="noopener">View Project <i class="fas fa-external-link-alt"></i></a>
-      </p>
-    </div>
-    
-    <div class="project-item" data-aos="flip-left" data-aos-delay="200">
-      <h3>AI Art Generator Integration</h3>
-      <p>
-        Developed an interface connecting Stable Diffusion API with a custom frontend to generate AI artwork based on user prompts.
-        <a href="#" target="_blank">Demo Available on Request</a>
-      </p>
+    <div class="project-grid">
+      <div class="project-item" data-aos="flip-left">
+        <div class="project-image" style="background-image: url('images/mindful-chatbot.jpg');">
+          <div class="project-overlay">
+            <a href="https://github.com/taibazahra/my-mindful-robot" target="_blank" rel="noopener" class="project-link">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Mindful Chatbot</h3>
+          <p>A compassionate, AI-powered assistant for meditation, affirmations, and reflection. Built with natural language processing to provide personalized mental wellness support.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>NLP</span>
+            <span>Chatbot</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-item" data-aos="flip-left" data-aos-delay="100">
+        <div class="project-image" style="background-image: url('images/academic-portal.jpg');">
+          <div class="project-overlay">
+            <a href="https://github.com/Sunidhi-incline/ai_powered_student_portal/tree/main/backend" target="_blank" rel="noopener" class="project-link">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>AI Powered Academic Portal</h3>
+          <p>A smart platform generating custom questions, giving feedback, and simplifying grading. Utilizes machine learning to adapt to student learning patterns.</p>
+          <div class="project-tech">
+            <span>Machine Learning</span>
+            <span>Education Tech</span>
+            <span>Python</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-item" data-aos="flip-left" data-aos-delay="200">
+        <div class="project-image" style="background-image: url('images/ai-art.jpg');">
+          <div class="project-overlay">
+            <a href="#" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>AI Art Generator Integration</h3>
+          <p>Developed an interface connecting Stable Diffusion API with a custom frontend to generate AI artwork based on user prompts.</p>
+          <div class="project-tech">
+            <span>Stable Diffusion</span>
+            <span>API Integration</span>
+            <span>Creative AI</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -195,29 +310,95 @@
     </div>
     
     <div class="skills-container">
-      <div class="skill-item" data-aos="zoom-in">
-        <h3><i class="fas fa-robot"></i> AI & Machine Learning</h3>
-        <p>Python, TensorFlow Basics, AI Integration, NLP, Prompt Engineering, Stable Diffusion API</p>
+      <div class="skill-category" data-aos="zoom-in">
+        <div class="category-header">
+          <i class="fas fa-robot"></i>
+          <h3>AI & Machine Learning</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <div class="skill-name">Python</div>
+            <div class="skill-progress">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-name">Machine Learning</div>
+            <div class="skill-progress">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-name">NLP</div>
+            <div class="skill-progress">
+              <div class="progress-fill" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
       </div>
       
-      <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
-        <h3><i class="fas fa-code"></i> Development</h3>
-        <p>Java, HTML, CSS, JavaScript, SQL, React, Power BI, API Integration</p>
+      <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
+        <div class="category-header">
+          <i class="fas fa-code"></i>
+          <h3>Development</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <div class="skill-name">Java</div>
+            <div class="skill-progress">
+              <div class="progress-fill" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-progress">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-name">SQL</div>
+            <div class="skill-progress">
+              <div class="progress-fill" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
       </div>
       
-      <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
-        <h3><i class="fas fa-paint-brush"></i> Design & Creative</h3>
-        <p>Canva, Adobe Premiere Pro, UX Design Principles, Graphic Design, Digital Marketing</p>
+      <div class="skill-category" data-aos="zoom-in" data-aos-delay="200">
+        <div class="category-header">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Design & Creative</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <div class="skill-name">UX Design</div>
+            <div class="skill-progress">
+              <div class="progress-fill" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-name">Graphic Design</div>
+            <div class="skill-progress">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-name">Video Editing</div>
+            <div class="skill-progress">
+              <div class="progress-fill" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
       </div>
       
-      <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
-        <h3><i class="fas fa-user-tie"></i> Professional</h3>
-        <p>Project Management, Marketing Research, Communication, Virtual Assistance, Negotiation</p>
-      </div>
-      
-      <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+      <div class="certifications" data-aos="fade-up" data-aos-delay="300">
         <h3><i class="fas fa-certificate"></i> Certifications</h3>
-        <p>Google UX Design Foundations, AI For Everyone (Coursera), Python for Data Science</p>
+        <ul>
+          <li>Google UX Design Foundations</li>
+          <li>AI For Everyone (Coursera)</li>
+          <li>Python for Data Science</li>
+          <li>Machine Learning Basics</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -227,48 +408,104 @@
     <div class="section-header">
       <h2>
         <span class="header-title">Let's Connect</span>
-        <img src="images/my-robo.gif" alt="Contact Robot" class="robo-icon transparent-bg" />
-        
+        <img src="images/my-robo.gif" alt="Contact Robot" class="robo-icon">
       </h2>
     </div>
     
-    <p>I'm actively seeking opportunities in AI integration and related fields. Feel free to reach out!</p>
-    
-    <div class="terminal-container" data-aos="zoom-in">
-      <div class="terminal-header">
-        <div class="terminal-button red"></div>
-        <div class="terminal-button yellow"></div>
-        <div class="terminal-button green"></div>
-        <div class="terminal-title">contact_taiba.sh</div>
+    <div class="contact-container">
+      <div class="contact-info" data-aos="fade-right">
+        <p>I'm actively seeking opportunities in AI integration and related fields. Feel free to reach out!</p>
+        
+        <div class="terminal-container">
+          <div class="terminal-header">
+            <div class="terminal-button red"></div>
+            <div class="terminal-button yellow"></div>
+            <div class="terminal-button green"></div>
+            <div class="terminal-title">contact_taiba.sh</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-prompt">$ <span class="terminal-command">./send_message.sh --to=taiba</span></div>
+            <div class="terminal-response">Establishing secure connection...</div>
+            <div class="terminal-response">Connection established. Available channels:</div>
+            <div class="terminal-response">> Email: <a href="mailto:taibazahra6@gmail.com" class="neon-link">taibazahra6@gmail.com</a></div>
+            <div class="terminal-response">> Phone: +91 7355069377</div>
+            <div class="terminal-response">> Location: Bengaluru, Karnataka</div>
+            <div class="terminal-prompt">$ <span class="terminal-command typing-effect">awaiting_response...</span></div>
+          </div>
+        </div>
       </div>
-      <div class="terminal-body">
-        <div class="terminal-prompt">$ <span class="terminal-command">./send_message.sh --to=taiba</span></div>
-        <div class="terminal-response">Establishing secure connection...</div>
-        <div class="terminal-response">Connection established. Available channels:</div>
-        <div class="terminal-response">> Email: <a href="mailto:taibazahra6@gmail.com" class="neon-link">taibazahra6@gmail.com</a></div>
-        <div class="terminal-response">> Phone: +91 7355069377</div>
-        <div class="terminal-response">> Location: Bengaluru, Karnataka</div>
-        <div class="terminal-prompt">$ <span class="terminal-command typing-effect">awaiting_response...</span></div>
+      
+      <div class="contact-form" data-aos="fade-left">
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required>
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
       </div>
     </div>
     
     <div class="social-links">
-        <a href="https://www.linkedin.com/in/taibazahra/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/dashboard" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="mailto:taibazahra6@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://x.com/home" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
-        
+      <a href="https://www.linkedin.com/in/taibazahra/" target="_blank" rel="noopener" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/taibazahra" target="_blank" rel="noopener" title="GitHub">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+      <a href="mailto:taibazahra6@gmail.com" title="Email">
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+      </a>
+      <a href="https://x.com/Taibazahra20" target="_blank" rel="noopener" title="Twitter">
+        <i class="fab fa-twitter"></i>
+        <span>Twitter</span>
+      </a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer data-aos="fade-up">
-    <p>© 2025 Taiba Zahra. Powered by AI and creativity.</p>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span>TZ</span>
+        <div class="ai-pulse"></div>
+      </div>
+      <p>© 2025 Taiba Zahra. Powered by AI and creativity.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </footer>
 
   <!-- AI Chatbot Widget -->
   <div class="ai-chatbot-widget" id="chatbotWidget">
     <i class="fas fa-robot"></i>
+    <div class="chatbot-tooltip">Ask me anything!</div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
   </div>
 
   <!-- Scripts -->
@@ -281,228 +518,10 @@
   <!-- Particles.js -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
   <!-- Custom Script -->
-  <script>
-    // Initialize AOS
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true
-    });
-    
-    // Initialize particles.js
-    document.addEventListener('DOMContentLoaded', function() {
-      particlesJS('particles-js', {
-        "particles": {
-          "number": {
-            "value": 80,
-            "density": {
-              "enable": true,
-              "value_area": 800
-            }
-          },
-          "color": {
-            "value": "#00f7ff"
-          },
-          "shape": {
-            "type": "circle",
-            "stroke": {
-              "width": 0,
-              "color": "#000000"
-            },
-            "polygon": {
-              "nb_sides": 5
-            }
-          },
-          "opacity": {
-            "value": 0.5,
-            "random": false,
-            "anim": {
-              "enable": false,
-              "speed": 1,
-              "opacity_min": 0.1,
-              "sync": false
-            }
-          },
-          "size": {
-            "value": 3,
-            "random": true,
-            "anim": {
-              "enable": false,
-              "speed": 40,
-              "size_min": 0.1,
-              "sync": false
-            }
-          },
-          "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#00f7ff",
-            "opacity": 0.4,
-            "width": 1
-          },
-          "move": {
-            "enable": true,
-            "speed": 2,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-              "enable": false,
-              "rotateX": 600,
-              "rotateY": 1200
-            }
-          }
-        },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": {
-              "enable": true,
-              "mode": "grab"
-            },
-            "onclick": {
-              "enable": true,
-              "mode": "push"
-            },
-            "resize": true
-          },
-          "modes": {
-            "grab": {
-              "distance": 140,
-              "line_linked": {
-                "opacity": 1
-              }
-            },
-            "bubble": {
-              "distance": 400,
-              "size": 40,
-              "duration": 2,
-              "opacity": 8,
-              "speed": 3
-            },
-            "repulse": {
-              "distance": 200,
-              "duration": 0.4
-            },
-            "push": {
-              "particles_nb": 4
-            },
-            "remove": {
-              "particles_nb": 2
-            }
-          }
-        },
-        "retina_detect": true
-      });
-      
-      // Chatbot widget interaction
-      const chatbotWidget = document.getElementById('chatbotWidget');
-      chatbotWidget.addEventListener('click', function() {
-        alert("AI Chatbot: Hello Folks! Thank you for vististing my portfolio. You can reach out to me via the contact section. Let's connect and explore the world of AI together! 😊");
-      });
-      
-      // Smooth scrolling for navigation
-      $('nav a').on('click', function(e) {
-        if (this.hash !== '') {
-          e.preventDefault();
-          const hash = this.hash;
-          $('html, body').animate(
-            {
-              scrollTop: $(hash).offset().top - 100,
-            },
-            800
-          );
-        }
-      });
-      
-      // Add floating AI elements
-      function createFloatingAI() {
-        const aiIcons = ['🤖', '🧠', '⚙️', '🔍', '💡', '📊', '🌐'];
-        const section = document.createElement('div');
-        section.className = 'floating-ai';
-        section.textContent = aiIcons[Math.floor(Math.random() * aiIcons.length)];
-        section.style.left = Math.random() * 100 + 'vw';
-        section.style.top = Math.random() * 100 + 'vh';
-        section.style.fontSize = (Math.random() * 20 + 10) + 'px';
-        section.style.animationDuration = (Math.random() * 10 + 5) + 's';
-        document.body.appendChild(section);
-        
-        setTimeout(() => {
-          section.remove();
-        }, 15000);
-      }
-      
-      // Create initial floating AI elements
-      for (let i = 0; i < 15; i++) {
-        setTimeout(createFloatingAI, i * 1000);
-      }
-      
-      // Continue creating floating AI elements periodically
-      setInterval(createFloatingAI, 3000);
-      
-      // Terminal typing effect
-      const terminalCommands = [
-        "analyze_portfolio --skills=ai,design,development",
-        "recommend_jobs --field=ai_integration --level=entry",
-        "connect_with --name=recruiter --message='Hire Taiba!'",
-        "run --project=mindful_chatbot --demo=true"
-      ];
-      
-      let currentCommand = 0;
-      const typingElement = document.querySelector('.typing-effect');
-      
-      function typeCommand() {
-        const command = terminalCommands[currentCommand];
-        let i = 0;
-        typingElement.textContent = '';
-        typingElement.classList.add('typing-effect');
-        
-        const typingInterval = setInterval(() => {
-          if (i < command.length) {
-            typingElement.textContent += command.charAt(i);
-            i++;
-          } else {
-            clearInterval(typingInterval);
-            setTimeout(() => {
-              typingElement.classList.remove('typing-effect');
-              setTimeout(eraseCommand, 2000);
-            }, 1000);
-          }
-        }, 100);
-      }
-      
-      function eraseCommand() {
-        let text = typingElement.textContent;
-        const erasingInterval = setInterval(() => {
-          if (text.length > 0) {
-            text = text.substring(0, text.length - 1);
-            typingElement.textContent = text;
-          } else {
-            clearInterval(erasingInterval);
-            currentCommand = (currentCommand + 1) % terminalCommands.length;
-            setTimeout(typeCommand, 500);
-          }
-        }, 50);
-      }
-      
-      // Start the typing effect
-      setTimeout(typeCommand, 3000);
-    });
-  </script>
-  <div class="interactive-robot" id="robot">
-    <div class="robot-face">
-      <div class="eye left-eye"></div>
-      <div class="eye right-eye"></div>
-    </div>
-  </div>
-  
-  <!-- Scripts -->
-  <script src="robot.js"></script>
-  </body>
-  </html>
-  
+  <script src="script.js"></script>
 </body>
 </html>
